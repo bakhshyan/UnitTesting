@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="ArephmaticTest">
+    <test name="TestWithDoubleValues">
+        <parameter name="a" value="2"></parameter>
+        <parameter name="b" value="3"></parameter>
+        <classes>
+            <class name="DoubleSumTest"></class>
+            <class name="DoubleSubtractionTest"></class>
+            <class name="DoubleMultiplicationTest"></class>
+            <class name="DoubleDivisionTest"></class>
+            <class name="PowTest"></class>
+        </classes>
+    </test>
+
+    <test name="TestWithLongValues">
+        <parameter name="a" value="2"></parameter>
+        <parameter name="b" value="3"></parameter>
+        <classes>
+            <class name="DoubleSumTest"></class>
+            <class name="DoubleSubtractionTest"></class>
+            <class name="DoubleMultiplicationTest"></class>
+            <class name="DoubleDivisionTest"></class>
+            <class name="PowTest"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TimeoutTest">
+    <test name="testTimeout">
+        <parameter name="sec" value="1"></parameter>
+        <classes>
+            <class name="TimeoutTest"></class>
+        </classes>
+    </test>
+
+
+
+</suite>

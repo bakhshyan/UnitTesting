@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="GeometricTest">
+    <test name="TestWithDoubleValues">
+        <parameter name="a" value="2"></parameter>
+        <classes>
+            <class name="SqrtTest"></class>
+            <class name="TgTest"></class>
+            <class name="CtgTest"></class>
+            <class name="CosTest"></class>
+            <class name="SinTest"></class>
+        </classes>
+    </test>
+
+    <test name="TestWithLongValues">
+        <parameter name="val" value="2"></parameter>
+        <classes>
+            <class name="IsPositiveTest"></class>
+            <class name="IsNegativeTest"></class>
+        </classes>
+    </test>
+
+</suite>
