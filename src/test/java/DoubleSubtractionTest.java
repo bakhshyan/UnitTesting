@@ -22,7 +22,7 @@ public class DoubleSubtractionTest {
         Assert.assertEquals(calculator.sub(a, b), -1, "");
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void finishTest(Method method) {
         System.out.println("-----Finished test: " + method.getName() + "------");
     }

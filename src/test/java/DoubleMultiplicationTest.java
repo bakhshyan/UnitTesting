@@ -22,7 +22,7 @@ public class DoubleMultiplicationTest {
         Assert.assertEquals(calculator.mult(a, b), 6, "");
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void finishTest(Method method) {
         System.out.println("-----Finished test: " + method.getName() + "------");
     }

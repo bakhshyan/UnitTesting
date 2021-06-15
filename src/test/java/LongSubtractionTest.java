@@ -22,7 +22,7 @@ public class LongSubtractionTest {
         Assert.assertEquals(calculator.sum(a, b), 10, "");
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void finishTest(Method method) {
         System.out.println("-----Finished test: " + method.getName() + "------");
     }

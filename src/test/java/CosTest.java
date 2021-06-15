@@ -25,7 +25,7 @@ public class CosTest {
 
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void finishTest(Method method) {
         System.out.println("-----Finished test: " + method.getName() + "------");
     }

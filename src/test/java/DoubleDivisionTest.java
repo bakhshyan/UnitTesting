@@ -22,7 +22,7 @@ public class DoubleDivisionTest {
         Assert.assertEquals(calculator.div(a, b), 0.6666666666666666, "");
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void finishTest(Method method) {
         System.out.println("-----Finished test: " + method.getName() + "------");
     }

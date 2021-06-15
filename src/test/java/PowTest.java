@@ -22,7 +22,7 @@ public class PowTest {
         Assert.assertEquals(calculator.pow(a, b), 8);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void finishTest(Method method) {
         System.out.println("-----Finished test: " + method.getName() + "------");
     }

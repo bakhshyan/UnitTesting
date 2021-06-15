@@ -22,7 +22,7 @@ public class CtgTest {
         Assert.assertEquals(calculator.ctg(a), 10);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void finishTest(Method method) {
         System.out.println("-----Finished test: " + method.getName() + "------");
     }

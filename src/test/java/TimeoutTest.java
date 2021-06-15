@@ -22,7 +22,7 @@ public class TimeoutTest {
         Timeout.sleep(sec);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void finishTest(Method method) {
         System.out.println("-----Finished test: " + method.getName() + "------");
     }

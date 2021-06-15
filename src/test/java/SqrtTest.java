@@ -22,7 +22,7 @@ public class SqrtTest {
         Assert.assertEquals(calculator.sqrt(a), 10);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void finishTest(Method method) {
         System.out.println("-----Finished test: " + method.getName() + "------");
     }
